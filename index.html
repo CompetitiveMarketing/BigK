@@ -1,0 +1,2177 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142332">
+<meta name="description" content="Big K Car & Truck Detailing in Kalgoorlie. Car, truck and bus detailing, wash and vacuum, cut and polish. Visit 255C Dugan Street or call 0432 421 207.">
+<title>Big K Car & Truck Detailing | Kalgoorlie</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#f4f1e9;
+  --white:#fffdf8;
+  --ink:#142332;
+  --muted:#667078;
+  --red:#a62e4b;
+  --line:#d7d8d2;
+  --blue:#dce7ec;
+  --max:1280px;
+  --heading:'Barlow Condensed','Arial Narrow',Impact,sans-serif;
+}
+
+*{box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:105px;
+}
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Manrope,Arial,sans-serif;
+  font-size:15px;
+  line-height:1.75;
+}
+
+body.locked{overflow:hidden}
+
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+button{cursor:pointer;color:inherit}
+img{max-width:100%;display:block}
+
+::selection{background:var(--red);color:white}
+
+:focus-visible{
+  outline:3px solid var(--red);
+  outline-offset:5px;
+}
+
+section{scroll-margin-top:100px}
+[hidden]{display:none!important}
+
+.wrap{
+  width:min(var(--max),calc(100% - 80px));
+  margin-inline:auto;
+}
+
+.eyebrow{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  line-height:1.5;
+}
+
+.eyebrow::before{
+  content:'';
+  width:23px;
+  height:2px;
+  background:var(--red);
+  flex:none;
+}
+
+.eyebrow.light{color:#c1d0d8}
+.eyebrow.light::before{background:#e8899f}
+
+h1,h2,h3,p,figure{margin:0}
+
+h1,h2,h3{
+  font-family:var(--heading);
+  font-weight:700;
+  line-height:.94;
+  text-transform:uppercase;
+  letter-spacing:-.015em;
+}
+
+h2{font-size:clamp(46px,5.5vw,76px)}
+p{max-width:62ch}
+.muted{color:var(--muted)}
+
+.skip{
+  position:fixed;
+  top:10px;
+  left:10px;
+  z-index:1000;
+  background:var(--white);
+  padding:10px 18px;
+  transform:translateY(-200%);
+}
+
+.skip:focus{transform:none}
+
+/* HEADER */
+
+.topbar{
+  background:var(--ink);
+  color:#e6ecef;
+  font-size:11px;
+  letter-spacing:.04em;
+}
+
+.topbar .wrap{
+  min-height:35px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.topbar a{
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.header{
+  position:sticky;
+  top:0;
+  z-index:40;
+  border-bottom:1px solid var(--line);
+  background:rgba(244,241,233,.97);
+  backdrop-filter:blur(16px);
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  min-height:88px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-shrink:0;
+}
+
+.brand-name{
+  font-family:var(--heading);
+  font-size:43px;
+  font-weight:800;
+  line-height:1;
+  letter-spacing:-.025em;
+}
+
+.brand-name em{
+  font-style:normal;
+  color:var(--red);
+}
+
+.brand-caption{
+  border-left:1px solid #bfc3c3;
+  padding-left:14px;
+  font-size:9px;
+  font-weight:800;
+  line-height:1.65;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  font-size:12px;
+  font-weight:800;
+}
+
+.navlinks>a:not(.btn){
+  padding:12px 0;
+  border-bottom:2px solid transparent;
+}
+
+.navlinks>a:not(.btn):hover{
+  border-color:var(--red);
+}
+
+.btn{
+  min-height:52px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:26px;
+  padding:14px 22px;
+  border:1px solid var(--ink);
+  background:var(--ink);
+  color:white;
+  font-size:12px;
+  font-weight:800;
+  line-height:1.4;
+  transition:background .2s,transform .2s;
+  text-align:center;
+}
+
+.btn:hover{
+  background:#2b4053;
+  transform:translateY(-2px);
+}
+
+.btn.red{
+  background:var(--red);
+  border-color:var(--red);
+}
+
+.btn.red:hover{background:#85223c}
+
+.btn.outline{
+  color:var(--ink);
+  background:transparent;
+  border-color:#aab0b1;
+}
+
+.btn.outline:hover{background:#e5e5de}
+
+.btn.white{
+  background:var(--white);
+  border-color:var(--white);
+  color:var(--ink);
+}
+
+.btn.small{
+  min-height:43px;
+  padding:11px 18px;
+}
+
+.arrow{
+  font-size:19px;
+  font-weight:500;
+  line-height:1;
+}
+
+.menu-toggle{
+  display:none;
+  background:none;
+  border:1px solid var(--line);
+  padding:9px 13px;
+  font-size:12px;
+  font-weight:800;
+}
+
+/* HERO */
+
+.hero{
+  padding:50px 0 42px;
+  overflow:hidden;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:.95fr 1fr;
+  gap:52px;
+  align-items:center;
+}
+
+.hero-copy{padding:18px 0}
+
+.hero h1{
+  font-size:clamp(80px,8.5vw,120px);
+  margin:27px 0 24px;
+  line-height:.87;
+  letter-spacing:-.025em;
+}
+
+.hero h1 span{color:var(--red)}
+
+.hero-intro{
+  max-width:420px;
+  color:#5d686f;
+  font-size:15px;
+  line-height:1.9;
+}
+
+.actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.hero-note{
+  display:flex;
+  gap:12px;
+  margin-top:31px;
+  align-items:center;
+  font-size:11px;
+  font-weight:700;
+  color:#69747a;
+}
+
+.hero-note::before{
+  content:'+';
+  font-family:var(--heading);
+  font-size:30px;
+  color:var(--red);
+  line-height:1;
+}
+
+.hero-photo{
+  position:relative;
+  min-width:0;
+}
+
+.hero-photo::before{
+  content:'';
+  position:absolute;
+  inset:18px -18px -18px 18px;
+  border:1px solid #c7c9c3;
+  z-index:-1;
+}
+
+.photo-link{
+  display:block;
+  position:relative;
+  background:var(--ink);
+  overflow:hidden;
+}
+
+.hero-photo img{
+  width:100%;
+  height:auto;
+  aspect-ratio:1;
+  object-fit:contain;
+}
+
+.photo-zoom{
+  position:absolute;
+  right:12px;
+  bottom:12px;
+  width:36px;
+  height:36px;
+  display:grid;
+  place-items:center;
+  background:var(--white);
+  color:var(--ink);
+  font-size:22px;
+  border:1px solid #ffffff80;
+}
+
+.photo-link:hover .photo-zoom{
+  background:var(--red);
+  color:white;
+}
+
+.hero-caption{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  background:var(--ink);
+  color:white;
+  padding:15px 19px;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.hero-caption span:last-child{color:#b8c7cf}
+
+/* VEHICLE STRIP */
+
+.vehicle-strip{
+  border-block:1px solid var(--line);
+  margin-top:28px;
+}
+
+.vehicle-strip .wrap{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.vehicle-strip .strip-label{
+  font-size:9px;
+  letter-spacing:.15em;
+  font-weight:800;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+
+.vehicle-types{
+  display:flex;
+  gap:clamp(18px,3vw,48px);
+  align-items:center;
+  font-family:var(--heading);
+  font-size:24px;
+  font-weight:600;
+  text-transform:uppercase;
+}
+
+.vehicle-types i{
+  font-size:13px;
+  font-style:normal;
+  color:var(--red);
+}
+
+/* INTRO */
+
+.section{padding:100px 0}
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:90px;
+  align-items:center;
+}
+
+.intro h2{margin-top:22px}
+.intro-text p+p{margin-top:18px}
+
+.text-link{
+  display:inline-flex;
+  gap:30px;
+  align-items:center;
+  margin-top:24px;
+  font-size:12px;
+  font-weight:800;
+  border-bottom:1px solid var(--ink);
+  padding-bottom:6px;
+}
+
+.text-link:hover{color:var(--red)}
+
+/* SERVICES */
+
+.services{
+  background:var(--ink);
+  color:var(--white);
+  position:relative;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:100px;
+  align-items:start;
+}
+
+.service-heading{
+  position:sticky;
+  top:126px;
+}
+
+.service-heading h2{margin:25px 0}
+
+.service-heading p{
+  color:#afbdc7;
+  font-size:14px;
+  max-width:330px;
+}
+
+.service-heading .text-link{
+  border-color:#75838e;
+  color:#fff;
+  margin-top:30px;
+}
+
+.service-list{
+  border-top:1px solid #ffffff30;
+}
+
+.service-list details{
+  border-bottom:1px solid #ffffff30;
+}
+
+.service-list summary{
+  padding:25px 0;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center;
+  cursor:pointer;
+  list-style:none;
+}
+
+.service-list summary::-webkit-details-marker{display:none}
+
+.service-list summary h3{
+  font-size:33px;
+  line-height:1.05;
+}
+
+.service-list summary::after{
+  content:'+';
+  font-size:27px;
+  font-weight:400;
+  line-height:1;
+  color:#df91a4;
+}
+
+.service-list details[open] summary::after{content:'−'}
+.service-list details[open] summary h3{color:#e9acba}
+
+.service-content{
+  padding:0 50px 25px 0;
+  color:#b9c5cd;
+  font-size:13px;
+}
+
+.service-content a{
+  display:inline-flex;
+  align-items:center;
+  gap:28px;
+  color:white;
+  font-size:11px;
+  font-weight:800;
+  margin-top:17px;
+}
+
+.service-content a:hover{color:#e9acba}
+
+/* GALLERY */
+
+.work-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:30px;
+  margin-bottom:40px;
+}
+
+.work-header h2{margin-top:22px}
+
+.work-header p{
+  font-size:13px;
+  max-width:290px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:1.15fr .85fr .85fr;
+  gap:24px;
+  align-items:start;
+}
+
+.gallery figure:nth-child(2){padding-top:62px}
+.gallery figure:nth-child(3){padding-top:112px}
+
+.gallery img{
+  width:100%;
+  height:auto;
+}
+
+.gallery figcaption{
+  padding-top:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+
+.gallery figcaption strong{
+  font-size:11px;
+  font-weight:800;
+}
+
+.gallery figcaption span{
+  font-size:9px;
+  letter-spacing:.1em;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+
+.gallery-foot{
+  margin-top:40px;
+  padding-top:23px;
+  border-top:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  font-size:12px;
+}
+
+.gallery-foot p{color:var(--muted)}
+
+/* QUOTE */
+
+.quote-section{background:var(--blue)}
+
+.quote-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:100px;
+}
+
+.quote-copy h2{margin:25px 0}
+
+.quote-copy>p{
+  color:#566674;
+  font-size:14px;
+  max-width:325px;
+}
+
+.quote-call{
+  margin-top:35px;
+  padding-top:25px;
+  border-top:1px solid #b2c0c9;
+  max-width:330px;
+}
+
+.quote-call span{
+  font-size:10px;
+  letter-spacing:.12em;
+  font-weight:700;
+  text-transform:uppercase;
+  display:block;
+}
+
+.quote-call a{
+  display:inline-block;
+  margin-top:5px;
+  font-family:var(--heading);
+  font-size:39px;
+  line-height:1.2;
+}
+
+.quote-call a:hover{color:var(--red)}
+
+.quote-form{
+  background:var(--white);
+  padding:34px;
+}
+
+.form-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  margin-bottom:24px;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--line);
+}
+
+.form-top strong{font-size:14px}
+
+.form-top span{
+  font-size:9px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--muted);
+}
+
+.fields{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:19px;
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  min-width:0;
+}
+
+.field.full{grid-column:1/-1}
+
+label{
+  font-size:11px;
+  font-weight:800;
+}
+
+label small{
+  font-weight:500;
+  color:var(--muted);
+}
+
+input,select,textarea{
+  width:100%;
+  min-width:0;
+  background:var(--white);
+  border:1px solid #c9cece;
+  border-radius:0;
+  padding:12px;
+  font-size:13px;
+  color:var(--ink);
+  min-height:46px;
+}
+
+textarea{
+  resize:vertical;
+  min-height:95px;
+}
+
+.form-note{
+  margin:19px 0;
+  font-size:10px;
+  line-height:1.8;
+  color:var(--muted);
+}
+
+.form-submit{width:100%}
+
+.btn:disabled{
+  cursor:not-allowed;
+  opacity:.55;
+  transform:none;
+}
+
+.message-result{
+  margin-top:24px;
+  padding-top:24px;
+  border-top:1px solid var(--line);
+}
+
+.message-result label{
+  display:block;
+  margin-bottom:9px;
+}
+
+.message-result textarea{
+  font-size:12px;
+  min-height:175px;
+  background:#f4f5f1;
+}
+
+.message-result .actions{margin-top:13px}
+
+.message-result .status{
+  font-size:11px;
+  margin-top:12px;
+  color:#53636c;
+}
+
+/* FAQ */
+
+.faq-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:100px;
+}
+
+.faq-heading h2{margin-top:23px}
+
+.faq-list{
+  border-top:1px solid var(--line);
+}
+
+.faq-list details{
+  border-bottom:1px solid var(--line);
+}
+
+.faq-list summary{
+  font-size:13px;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  cursor:pointer;
+  list-style:none;
+  padding:22px 0;
+}
+
+.faq-list summary::-webkit-details-marker{display:none}
+
+.faq-list summary::after{
+  content:'+';
+  color:var(--red);
+  font-size:23px;
+  flex:none;
+}
+
+.faq-list details[open] summary::after{content:'−'}
+
+.faq-list details p{
+  font-size:13px;
+  color:var(--muted);
+  padding:0 20px 22px 0;
+}
+
+.faq-list a{text-decoration:underline}
+
+/* CONTACT */
+
+.visit{
+  background:var(--ink);
+  color:white;
+  padding:75px 0 45px;
+}
+
+.visit-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:35px;
+  padding-bottom:45px;
+  border-bottom:1px solid #ffffff25;
+}
+
+.visit h2{
+  font-size:clamp(48px,6vw,80px);
+}
+
+.visit-top .btn{min-width:205px}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1.1fr 1fr .8fr;
+  gap:60px;
+  margin-top:40px;
+}
+
+.contact-label{
+  font-size:9px;
+  letter-spacing:.16em;
+  font-weight:800;
+  color:#aabac4;
+  text-transform:uppercase;
+  display:block;
+  margin-bottom:15px;
+}
+
+.address{
+  font-size:16px;
+  line-height:1.7;
+}
+
+.contact-grid .text-link{
+  margin-top:14px;
+  color:#f2f5f6;
+  border-color:#637684;
+}
+
+.hours{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:7px 22px;
+  font-size:12px;
+  max-width:300px;
+}
+
+.hours dd,.hours dt{margin:0}
+.hours dd{color:#c0cdd6}
+
+.contact-small{
+  color:#b2c1cb;
+  font-size:10px;
+  margin-top:12px;
+}
+
+.contact-phone{
+  font-family:var(--heading);
+  font-size:33px;
+  line-height:1.2;
+}
+
+/* FOOTER */
+
+.footer{
+  padding:23px 0;
+  background:var(--ink);
+  color:#aabac4;
+  border-top:1px solid #ffffff20;
+}
+
+.footer .wrap{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  font-size:10px;
+}
+
+.footer a:hover{color:white}
+
+.demo-note{
+  font-size:10px;
+  text-align:center;
+  padding:10px 20px;
+  background:#e9e5db;
+  color:#656c6d;
+}
+
+.mobile-bar{display:none}
+
+/* PHOTO VIEWER */
+
+.lightbox{
+  border:0;
+  padding:0;
+  background:var(--ink);
+  color:white;
+  width:min(1000px,calc(100% - 28px));
+  max-height:95dvh;
+  overflow:auto;
+}
+
+.lightbox::backdrop{
+  background:#07101beb;
+  backdrop-filter:blur(7px);
+}
+
+.lightbox-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  padding:15px 20px;
+}
+
+.lightbox-head strong{font-size:12px}
+
+.icon-btn{
+  background:transparent;
+  color:white;
+  border:1px solid #ffffff50;
+  min-width:40px;
+  min-height:40px;
+  font-size:20px;
+}
+
+.lightbox img{
+  height:min(70dvh,720px);
+  width:100%;
+  object-fit:contain;
+  background:#0c1620;
+}
+
+.lightbox-bottom{
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  font-size:12px;
+}
+
+.lightbox-controls{
+  display:flex;
+  gap:8px;
+}
+
+.lightbox-bottom a{
+  font-size:11px;
+  text-decoration:underline;
+}
+
+/* RESPONSIVE */
+
+@media(min-width:1500px){
+  .hero h1{font-size:125px}
+}
+
+@media(max-width:1100px){
+  .wrap{width:calc(100% - 48px)}
+  .hero-grid{gap:32px}
+  .navlinks{gap:22px}
+
+  .service-grid,.quote-grid,.faq-grid{
+    gap:55px;
+  }
+
+  .intro-grid{gap:55px}
+  .contact-grid{gap:35px}
+  .hero h1{font-size:95px}
+  .hero-intro{font-size:14px}
+
+  .hero .btn{
+    padding:14px 18px;
+    gap:17px;
+  }
+}
+
+@media(max-width:800px){
+  html{scroll-padding-top:85px}
+
+  .wrap{width:calc(100% - 40px)}
+  .nav{min-height:76px}
+  .brand-name{font-size:38px}
+  .brand-caption{font-size:8px}
+
+  .menu-toggle{
+    display:block;
+    min-height:44px;
+  }
+
+  .quote-form input,
+  .quote-form select,
+  .quote-form textarea{
+    font-size:16px;
+  }
+
+  .navlinks{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:var(--paper);
+    padding:18px 20px 25px;
+    border-bottom:1px solid var(--line);
+    box-shadow:0 15px 30px #14233212;
+    flex-direction:column;
+    align-items:stretch;
+    gap:5px;
+  }
+
+  .navlinks.open{display:flex}
+  .navlinks .btn{margin-top:10px}
+
+  .hero{padding-top:30px}
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:34px;
+  }
+
+  .hero-copy{padding:0}
+
+  .hero h1{
+    font-size:clamp(80px,15vw,118px);
+    margin:25px 0;
+  }
+
+  .hero-intro{max-width:480px}
+  .hero-note{margin-top:22px}
+
+  .hero-photo{
+    max-width:600px;
+    width:100%;
+    justify-self:center;
+  }
+
+  .hero-photo::before{
+    inset:10px -10px -10px 10px;
+  }
+
+  .vehicle-strip{margin-top:12px}
+
+  .vehicle-strip .wrap{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:9px;
+    padding-block:18px;
+    min-height:auto;
+  }
+
+  .vehicle-types{
+    gap:16px;
+    flex-wrap:wrap;
+    font-size:22px;
+  }
+
+  .vehicle-types i{font-size:9px}
+  .section{padding:70px 0}
+
+  .intro-grid,.service-grid,.quote-grid,.faq-grid{
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+
+  .intro-text{max-width:600px}
+  .service-heading{position:static}
+
+  .service-heading p,.quote-copy>p{
+    max-width:550px;
+  }
+
+  .service-heading .text-link{margin-top:18px}
+  .service-list summary h3{font-size:32px}
+  .work-header{align-items:start}
+  .work-header p{max-width:210px}
+
+  .gallery{
+    gap:16px;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery figure:first-child{
+    grid-column:1/-1;
+    max-width:500px;
+    width:100%;
+  }
+
+  .gallery figure:nth-child(2),
+  .gallery figure:nth-child(3){
+    padding-top:0;
+  }
+
+  .gallery figcaption{
+    align-items:start;
+    flex-direction:column;
+    gap:3px;
+  }
+
+  .quote-call{
+    margin-top:22px;
+    padding-top:18px;
+  }
+
+  .quote-copy h2{margin:22px 0}
+
+  .quote-form{
+    max-width:650px;
+    width:100%;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+  }
+
+  .visit-top{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .visit{padding:65px 0 40px}
+  .footer .wrap{align-items:flex-start}
+  .demo-note{padding-bottom:85px}
+
+  .mobile-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:45;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background:var(--paper);
+    padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+    gap:8px;
+    border-top:1px solid var(--line);
+    box-shadow:0 -6px 24px #14233210;
+  }
+
+  .mobile-bar .btn{
+    min-height:46px;
+    padding:10px 14px;
+  }
+
+  .lightbox{max-height:88dvh}
+  .lightbox img{height:63dvh}
+}
+
+@media(max-width:480px){
+  .wrap{width:calc(100% - 36px)}
+
+  .topbar .wrap{
+    font-size:9px;
+    gap:5px;
+  }
+
+  .topbar .location-long{display:none}
+  .brand{gap:10px}
+  .brand-caption{padding-left:10px}
+
+  .hero h1{
+    font-size:clamp(62px,18vw,78px);
+  }
+
+  .hero .actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+
+  .hero .btn{
+    padding:14px 10px;
+    font-size:11px;
+    gap:12px;
+  }
+
+  .hero-caption{
+    padding:13px 12px;
+    font-size:8px;
+    letter-spacing:.08em;
+  }
+
+  .hero-caption span:last-child{
+    max-width:130px;
+    text-align:right;
+  }
+
+  .vehicle-types{
+    gap:12px;
+    font-size:20px;
+  }
+
+  .vehicle-types i{font-size:8px}
+
+  .work-header{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .work-header p{max-width:none}
+  .gallery{gap:13px}
+
+  .gallery-foot{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .gallery-foot .text-link{margin-top:0}
+  .quote-form{padding:25px 20px}
+
+  .fields{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .form-top{align-items:flex-start}
+
+  .form-top span{
+    text-align:right;
+    max-width:100px;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .footer .wrap{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .service-content{padding-right:12px}
+  .lightbox-head{padding:12px}
+
+  .lightbox-bottom{
+    padding:12px;
+    gap:10px;
+  }
+
+  .lightbox-head strong{font-size:11px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+
+  *,*::before,*::after{
+    transition:none!important;
+    animation:none!important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>
+      255C Dugan Street<span class="location-long">, Kalgoorlie</span> · WA
+    </span>
+    <a href="tel:+61432421207">Call 0432 421 207 ↗</a>
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap nav">
+
+    <a class="brand" href="#main"
+       aria-label="Big K Car and Truck Detailing home">
+      <span class="brand-name">BIG <em>K</em></span>
+      <span class="brand-caption">
+        Car &amp; Truck<br>
+        Detailing · Kalgoorlie
+      </span>
+    </a>
+
+    <button class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-nav">
+      Menu +
+    </button>
+
+    <nav class="navlinks" id="main-nav" aria-label="Main navigation">
+      <a href="#services">Our services</a>
+      <a href="#work">At the workshop</a>
+      <a href="#visit">Find us</a>
+      <a href="#quote" class="btn small">
+        Get a quote
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <div class="eyebrow">
+          Vehicle detailing / Kalgoorlie, WA
+        </div>
+
+        <h1 id="hero-title">
+          Big on<br>
+          the <span>details.</span>
+        </h1>
+
+        <p class="hero-intro">
+          Daily drivers. Weekend 4WDs. Hard-working trucks.
+          Give your vehicle some attention at Big K Car &amp; Truck Detailing.
+        </p>
+
+        <div class="actions">
+          <a class="btn red" href="#quote">
+            Get a quote
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="btn outline" href="tel:+61432421207">
+            Call Big K
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="hero-note">
+          Find us at 255C Dugan Street, Kalgoorlie.
+        </div>
+      </div>
+
+      <figure class="hero-photo">
+        <a class="photo-link"
+           href="big-k-workshop-ram.jpg"
+           data-photo="0"
+           aria-label="View full photo of a RAM inside the Big K workshop">
+          <img src="big-k-workshop-ram.jpg"
+               width="2048"
+               height="2048"
+               alt="RAM truck inside the Big K detailing workshop"
+               fetchpriority="high">
+          <span class="photo-zoom" aria-hidden="true">↗</span>
+        </a>
+
+        <figcaption class="hero-caption">
+          <span>Inside Big K</span>
+          <span>Dugan Street · Kalgoorlie</span>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <div class="vehicle-strip">
+    <div class="wrap">
+      <span class="strip-label">For the vehicles you rely on</span>
+      <div class="vehicle-types">
+        <span>Cars &amp; 4WDs</span>
+        <i aria-hidden="true">✦</i>
+        <span>Trucks &amp; buses</span>
+        <i aria-hidden="true">✦</i>
+        <span>Work vehicles</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section intro" id="about" aria-labelledby="about-title">
+    <div class="wrap intro-grid">
+
+      <div>
+        <div class="eyebrow">A local place for a proper clean</div>
+        <h2 id="about-title">
+          Everyday cars.<br>
+          Serious workhorses.
+        </h2>
+      </div>
+
+      <div class="intro-text">
+        <p>
+          Life in the Goldfields puts a vehicle to work. Whether yours
+          handles the school run, the open road or a day on site,
+          Big K offers vehicle cleaning and detailing in Kalgoorlie.
+        </p>
+
+        <p class="muted">
+          From a wash and vacuum to a more thorough detail or cut and
+          polish, tell us what your vehicle needs. We also welcome
+          enquiries for trucks, buses, business and mining vehicles.
+        </p>
+
+        <a class="text-link" href="#services">
+          Find your next clean
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section services" id="services"
+           aria-labelledby="services-title">
+    <div class="wrap service-grid">
+
+      <div class="service-heading">
+        <div class="eyebrow light">Choose your clean</div>
+
+        <h2 id="services-title">
+          A little refresh.<br>
+          A bigger reset.
+        </h2>
+
+        <p>
+          Different vehicles need different attention. Explore the options,
+          then ask the team for a quote to suit yours.
+        </p>
+
+        <a class="text-link" href="tel:+61432421207">
+          Not sure? Call the team
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="service-list">
+
+        <details name="services" open>
+          <summary>
+            <h3>Full vehicle detailing</h3>
+          </summary>
+          <div class="service-content">
+            <p>
+              For a vehicle that needs more than its usual clean.
+              Discuss interior and exterior detailing options with the
+              team, with the work and price agreed to suit your vehicle.
+            </p>
+            <a href="#quote" data-service="Full vehicle detailing">
+              Ask about a full detail
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </details>
+
+        <details name="services">
+          <summary>
+            <h3>Wash &amp; vacuum</h3>
+          </summary>
+          <div class="service-content">
+            <p>
+              A straightforward refresh for your daily driver. Ask about
+              a wash and vacuum, and let us know if any areas need extra
+              attention.
+            </p>
+            <a href="#quote" data-service="Wash and vacuum">
+              Ask about a wash &amp; vacuum
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </details>
+
+        <details name="services">
+          <summary>
+            <h3>Cut &amp; polish</h3>
+          </summary>
+          <div class="service-content">
+            <p>
+              Give your paintwork some attention. Tell us about dullness
+              or visible marks so the team can advise on a suitable cut
+              and polish or buff and polish.
+            </p>
+            <a href="#quote" data-service="Cut and polish">
+              Discuss your paintwork
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </details>
+
+        <details name="services">
+          <summary>
+            <h3>Trucks, buses &amp; work vehicles</h3>
+          </summary>
+          <div class="service-content">
+            <p>
+              Cleaning enquiries for commercial vehicles, local businesses
+              and the mining industry. Share your vehicle types,
+              quantities and cleaning requirements with us.
+            </p>
+            <a href="#quote" data-service="Commercial or fleet enquiry">
+              Make a commercial enquiry
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+
+      <div class="work-header">
+        <div>
+          <div class="eyebrow">A look around Big K</div>
+          <h2 id="work-title">At the workshop.</h2>
+        </div>
+        <p class="muted">
+          From the workshop floor to the forecourt.
+          Take a closer look at Big K on Dugan Street.
+        </p>
+      </div>
+
+      <div class="gallery">
+
+        <figure>
+          <a class="photo-link"
+             href="big-k-chevrolet-detail.jpg"
+             data-photo="1"
+             aria-label="View full Chevrolet photo">
+            <img src="big-k-chevrolet-detail.jpg"
+                 width="1496"
+                 height="1496"
+                 alt="Chevrolet pickup outside Big K Car and Truck Detailing"
+                 loading="lazy">
+            <span class="photo-zoom" aria-hidden="true">↗</span>
+          </a>
+          <figcaption>
+            <strong>Big vehicles, close attention.</strong>
+            <span>At Big K</span>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <a class="photo-link"
+             href="big-k-detailing-in-progress.jpg"
+             data-photo="2"
+             aria-label="View full detailing in progress photo">
+            <img src="big-k-detailing-in-progress.jpg"
+                 width="1200"
+                 height="1600"
+                 alt="White work ute with cleaning equipment outside the Big K premises"
+                 loading="lazy">
+            <span class="photo-zoom" aria-hidden="true">↗</span>
+          </a>
+          <figcaption>
+            <strong>On the job.</strong>
+            <span>Work vehicles</span>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <a class="photo-link"
+             href="big-k-real-storefront.jpg"
+             data-photo="3"
+             aria-label="View full Big K storefront photo">
+            <img src="big-k-real-storefront.jpg"
+                 width="1200"
+                 height="1600"
+                 alt="Big K's real red brick storefront on Dugan Street, Kalgoorlie"
+                 loading="lazy">
+            <span class="photo-zoom" aria-hidden="true">↗</span>
+          </a>
+          <figcaption>
+            <strong>Your next stop.</strong>
+            <span>255C Dugan Street</span>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <div class="gallery-foot">
+        <p>Got a vehicle that needs a clean? Let’s talk about it.</p>
+        <a class="text-link" href="#quote">
+          Tell us what you drive
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section quote-section" id="quote"
+           aria-labelledby="quote-title">
+    <div class="wrap quote-grid">
+
+      <div class="quote-copy">
+        <div class="eyebrow">Start with your vehicle</div>
+
+        <h2 id="quote-title">
+          Let’s get<br>
+          it sorted.
+        </h2>
+
+        <p>
+          Tell us what you drive and what needs attention. Prepare a text
+          below, then review and send it to the Big K team.
+        </p>
+
+        <div class="quote-call">
+          <span>Prefer to have a chat?</span>
+          <a href="tel:+61432421207">0432 421 207 ↗</a>
+        </div>
+      </div>
+
+      <form class="quote-form" id="quote-form">
+
+        <div class="form-top">
+          <strong>Your quote enquiry</strong>
+          <span>No booking commitment</span>
+        </div>
+
+        <div class="fields">
+
+          <div class="field">
+            <label for="customer-name">Your name</label>
+            <input id="customer-name"
+                   autocomplete="given-name"
+                   placeholder="First name"
+                   maxlength="60"
+                   required>
+          </div>
+
+          <div class="field">
+            <label for="vehicle-type">Vehicle type</label>
+            <select id="vehicle-type" required>
+              <option value="" disabled selected>Select a vehicle</option>
+              <option>Car</option>
+              <option>4WD or SUV</option>
+              <option>Ute</option>
+              <option>Truck</option>
+              <option>Bus</option>
+              <option>Multiple / fleet vehicles</option>
+              <option>Other vehicle</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="vehicle-model">
+              Make &amp; model <small>or fleet details</small>
+            </label>
+            <input id="vehicle-model"
+                   placeholder="e.g. Toyota Hilux, or 3 work utes"
+                   maxlength="100"
+                   required>
+          </div>
+
+          <div class="field full">
+            <label for="service">What are you looking for?</label>
+            <select id="service" required>
+              <option value="" disabled selected>Choose a service</option>
+              <option>Full vehicle detailing</option>
+              <option>Wash and vacuum</option>
+              <option>Cut and polish</option>
+              <option>Commercial or fleet enquiry</option>
+              <option>Not sure — please advise</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="vehicle-notes">
+              Anything else? <small>Optional</small>
+            </label>
+            <textarea id="vehicle-notes"
+                      placeholder="Vehicle condition, areas needing attention or a preferred day…"
+                      maxlength="500"></textarea>
+          </div>
+
+        </div>
+
+        <p class="form-note">
+          This prepares a message in your SMS app. Nothing is sent until
+          you send it. Price, availability and the final scope of work
+          are confirmed by Big K.
+        </p>
+
+        <button class="btn red form-submit"
+                type="submit"
+                id="prepare-button"
+                disabled>
+          Prepare my quote text
+          <span class="arrow" aria-hidden="true">↗</span>
+        </button>
+
+        <noscript>
+          <p>
+            Please <a href="tel:+61432421207">call 0432 421 207</a>
+            to request a quote.
+          </p>
+        </noscript>
+
+        <div class="message-result" id="message-result" hidden>
+
+          <label for="message-preview">
+            Your message is ready to review
+          </label>
+
+          <textarea id="message-preview" readonly></textarea>
+
+          <div class="actions">
+            <a class="btn red"
+               id="sms-link"
+               href="sms:+61432421207">
+              Open text message ↗
+            </a>
+
+            <button class="btn outline"
+                    type="button"
+                    id="copy-message">
+              Copy request
+            </button>
+          </div>
+
+          <p class="status"
+             id="message-status"
+             role="status"
+             aria-live="polite">
+            Review your message, open your SMS app, then press send.
+            On a computer, you can copy the request instead.
+          </p>
+
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+
+      <div class="faq-heading">
+        <div class="eyebrow">Before you drop in</div>
+        <h2 id="faq-title">Good to know.</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>How much will my detail cost?</summary>
+          <p>
+            Pricing depends on your vehicle’s size, condition and the
+            work you need. <a href="#quote">Send a quote enquiry</a>
+            or call the team to discuss it before booking.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you clean larger vehicles?</summary>
+          <p>
+            Big K welcomes enquiries for cars, 4WDs, trucks, buses and
+            work vehicles. For larger vehicles or multiple vehicles,
+            call ahead with their details so the team can confirm
+            suitability and availability.
+          </p>
+        </details>
+
+        <details>
+          <summary>Should I book before bringing my vehicle?</summary>
+          <p>
+            Please call first to discuss the service, availability and
+            how long the work may take. A quote enquiry doesn’t reserve
+            a booking until the team confirms it with you.
+          </p>
+        </details>
+
+        <details>
+          <summary>Where do I bring my vehicle?</summary>
+          <p>
+            Find Big K at 255C Dugan Street, Kalgoorlie WA 6430.
+            Look for the red brick premises shown above.
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Big+K+Car+%26+Truck+Detailing+255C+Dugan+St+Kalgoorlie+WA+6430"
+               target="_blank"
+               rel="noopener noreferrer">
+              Open directions in Google Maps
+            </a>.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+
+      <div class="visit-top">
+        <h2 id="visit-title">
+          Next stop.<br>
+          A cleaner vehicle.
+        </h2>
+
+        <a class="btn white" href="tel:+61432421207">
+          Call 0432 421 207
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="contact-grid">
+
+        <div>
+          <span class="contact-label">Come find us</span>
+
+          <p class="address">
+            255C Dugan Street<br>
+            Kalgoorlie, WA 6430
+          </p>
+
+          <a class="text-link"
+             href="https://www.google.com/maps/search/?api=1&amp;query=Big+K+Car+%26+Truck+Detailing+255C+Dugan+St+Kalgoorlie+WA+6430"
+             target="_blank"
+             rel="noopener noreferrer">
+            Get directions
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div>
+          <span class="contact-label">Listed opening hours</span>
+
+          <dl class="hours">
+            <dt>Monday – Friday</dt>
+            <dd>7:30 am – 6 pm</dd>
+            <dt>Saturday – Sunday</dt>
+            <dd>8 am – 4 pm</dd>
+          </dl>
+
+          <p class="contact-small">
+            Please call before visiting. Holiday hours may vary.
+          </p>
+        </div>
+
+        <div>
+          <span class="contact-label">Talk to Big K</span>
+
+          <a class="contact-phone" href="tel:+61432421207">
+            0432 421 207
+          </a>
+
+          <p class="contact-small">
+            Vehicle details ready?<br>
+            We’ll talk through your next clean.
+          </p>
+
+          <a class="text-link" href="#quote">
+            Prepare a quote enquiry ↗
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>
+      © <span id="year">2026</span> Big K Car &amp; Truck Detailing.
+    </span>
+    <a href="#main">Back to top ↑</a>
+    <span>Website concept by Competitive Marketing</span>
+  </div>
+</footer>
+
+<div class="demo-note">
+  Website preview · Business details, services and photo permissions
+  to be confirmed before launch.
+</div>
+
+<div class="mobile-bar" aria-label="Quick contact">
+  <a class="btn" href="tel:+61432421207">Call Big K ↗</a>
+  <a class="btn red" href="#quote">Get a quote ↗</a>
+</div>
+
+<dialog class="lightbox" id="photo-dialog" aria-labelledby="photo-title">
+
+  <div class="lightbox-head">
+    <strong id="photo-title">At Big K</strong>
+    <button class="icon-btn"
+            type="button"
+            id="close-photo"
+            aria-label="Close photo">×</button>
+  </div>
+
+  <img id="large-photo" alt="">
+
+  <div class="lightbox-bottom">
+    <span id="photo-count"></span>
+
+    <a id="photo-original"
+       href="big-k-workshop-ram.jpg"
+       target="_blank"
+       rel="noopener">
+      Open original ↗
+    </a>
+
+    <div class="lightbox-controls">
+      <button class="icon-btn"
+              id="previous-photo"
+              type="button"
+              aria-label="Previous photo">←</button>
+
+      <button class="icon-btn"
+              id="next-photo"
+              type="button"
+              aria-label="Next photo">→</button>
+    </div>
+  </div>
+
+</dialog>
+
+<script>
+(() => {
+  'use strict';
+
+  const $ = id => document.getElementById(id);
+
+  $('year').textContent = new Date().getFullYear();
+
+  /* MOBILE NAVIGATION */
+
+    const menuButton = document.querySelector('.menu-toggle');
+  const menu = $('main-nav');
+
+  function closeMenu() {
+    menu.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.textContent = 'Menu +';
+  }
+
+  menuButton.addEventListener('click', () => {
+    const opened = menu.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(opened));
+    menuButton.textContent = opened ? 'Close −' : 'Menu +';
+  });
+
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu.classList.contains('open')) {
+      closeMenu();
+      menuButton.focus();
+    }
+  });
+
+  /* SERVICE SELECTION */
+
+  document.querySelectorAll('[data-service]').forEach(link => {
+    link.addEventListener('click', () => {
+      $('service').value = link.dataset.service;
+      $('message-result').hidden = true;
+    });
+  });
+
+  /* QUOTE MESSAGE */
+
+  const quoteForm = $('quote-form');
+
+  quoteForm.addEventListener('input', () => {
+    $('message-result').hidden = true;
+  });
+
+  quoteForm.addEventListener('submit', event => {
+    event.preventDefault();
+
+    if (!quoteForm.reportValidity()) return;
+
+    const name = $('customer-name').value.trim();
+    const model = $('vehicle-model').value.trim();
+
+    if (!name || !model) {
+      const field = !name
+        ? $('customer-name')
+        : $('vehicle-model');
+
+      field.setCustomValidity('Please enter a few details.');
+      field.reportValidity();
+
+      field.addEventListener('input', () => {
+        field.setCustomValidity('');
+      }, { once: true });
+
+      return;
+    }
+
+    const message = [
+      'Hi Big K, I would like a quote please.',
+      '',
+      'Name: ' + name,
+      'Vehicle type: ' + $('vehicle-type').value,
+      'Make/model: ' + model,
+      'Service: ' + $('service').value,
+      $('vehicle-notes').value.trim()
+        ? 'Details: ' + $('vehicle-notes').value.trim()
+        : '',
+      '',
+      'Could you please let me know the price and availability? Thanks!'
+    ]
+      .filter((line, index, lines) => {
+        return line !== '' || lines[index - 1] !== '';
+      })
+      .join('\n');
+
+    $('message-preview').value = message;
+
+    const separator = /iPhone|iPad|iPod/i.test(navigator.userAgent)
+      ? '&'
+      : '?';
+
+    $('sms-link').href =
+      'sms:+61432421207' +
+      separator +
+      'body=' +
+      encodeURIComponent(message);
+
+    $('message-status').textContent =
+      'Review your message, open your SMS app, then press send. ' +
+      'On a computer, you can copy the request instead.';
+
+    $('copy-message').textContent = 'Copy request';
+    $('message-result').hidden = false;
+    $('message-preview').focus({ preventScroll: true });
+
+    $('message-result').scrollIntoView({
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'auto'
+        : 'smooth',
+      block: 'nearest'
+    });
+  });
+
+  $('copy-message').addEventListener('click', async () => {
+    try {
+      if (!navigator.clipboard) {
+        throw new Error('Clipboard unavailable');
+      }
+
+      await navigator.clipboard.writeText(
+        $('message-preview').value
+      );
+
+      $('copy-message').textContent = 'Copied ✓';
+      $('message-status').textContent =
+        'Copied. Paste this into a text message to 0432 421 207.';
+    } catch {
+      $('message-preview').focus();
+      $('message-preview').select();
+
+      $('message-status').textContent =
+        'Your message is selected. Use your device’s Copy command, ' +
+        'then text it to 0432 421 207.';
+    }
+  });
+
+  $('prepare-button').disabled = false;
+
+  /* PHOTO VIEWER */
+
+  const photos = [
+    {
+      src: 'big-k-workshop-ram.jpg',
+      title: 'RAM inside the Big K workshop'
+    },
+    {
+      src: 'big-k-chevrolet-detail.jpg',
+      title: 'Chevrolet outside Big K'
+    },
+    {
+      src: 'big-k-detailing-in-progress.jpg',
+      title: 'Work vehicle at the Big K premises'
+    },
+    {
+      src: 'big-k-real-storefront.jpg',
+      title: 'Big K · 255C Dugan Street, Kalgoorlie'
+    }
+  ];
+
+  const dialog = $('photo-dialog');
+  let currentPhoto = 0;
+  let previousFocus = null;
+
+  function displayPhoto(index) {
+    currentPhoto = (index + photos.length) % photos.length;
+
+    const photo = photos[currentPhoto];
+
+    $('large-photo').src = photo.src;
+    $('large-photo').alt = photo.title;
+    $('photo-title').textContent = photo.title;
+    $('photo-count').textContent =
+      (currentPhoto + 1) + ' / ' + photos.length;
+    $('photo-original').href = photo.src;
+  }
+
+  document.querySelectorAll('[data-photo]').forEach(link => {
+    link.addEventListener('click', event => {
+      if (typeof dialog.showModal !== 'function') return;
+
+      event.preventDefault();
+      previousFocus = link;
+
+      displayPhoto(Number(link.dataset.photo));
+      dialog.showModal();
+
+      document.body.classList.add('locked');
+      $('close-photo').focus();
+    });
+  });
+
+  $('close-photo').addEventListener('click', () => {
+    dialog.close();
+  });
+
+  $('previous-photo').addEventListener('click', () => {
+    displayPhoto(currentPhoto - 1);
+  });
+
+  $('next-photo').addEventListener('click', () => {
+    displayPhoto(currentPhoto + 1);
+  });
+
+  dialog.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      displayPhoto(currentPhoto - 1);
+    }
+
+    if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      displayPhoto(currentPhoto + 1);
+    }
+  });
+
+  dialog.addEventListener('click', event => {
+    const box = dialog.getBoundingClientRect();
+
+    const clickedOutside =
+      event.clientX < box.left ||
+      event.clientX > box.right ||
+      event.clientY < box.top ||
+      event.clientY > box.bottom;
+
+    if (event.target === dialog && clickedOutside) {
+      dialog.close();
+    }
+  });
+
+  dialog.addEventListener('close', () => {
+    document.body.classList.remove('locked');
+
+    if (previousFocus) {
+      previousFocus.focus({ preventScroll: true });
+    }
+  });
+
+})();
+</script>
+</body>
+</html>
